@@ -13,6 +13,9 @@ function createGreeting(name, age) {
   if (!age || !name) {
     throw new Error('Arguments not valid');
   }
+  if (typeof age !== 'number' || typeof name !== 'string') {
+    throw new TypeError('Name must be letters and age must be a number');
+  }
   const yob = getYearOfBirth(age);
   return `Hi, my name is ${name} and I\'m ${age} years old. I was born in ${getYearOfBirth(age)}`;
 }
