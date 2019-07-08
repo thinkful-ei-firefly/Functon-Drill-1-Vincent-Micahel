@@ -1,9 +1,7 @@
 'use strict';
 
-function createGreeting(name,age){ 
-    return `Hi, my name is ${name} and I\'m ${age} years old` ;
+function createGreeting(name, age){
+    const yearOfBirth= 2019-age;
+    return createGreeting
 }
-
-const greeting1= createGreeting('Vincent',23);
-console.log(greeting1);
 
